@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "341913309348",
+    "firebase_url": "https://form-fb311.firebaseio.com",
+    "project_id": "form-fb311",
+    "storage_bucket": "form-fb311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341913309348:android:4869be4bb5fbb0fdb51631",
+        "android_client_info": {
+          "package_name": "com.example.form"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341913309348-lemtk6f9jlugk1dt06ob8enkd9g70uvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqpp89077656NbrJ9M7s-3IfBPe7DDoa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341913309348-lemtk6f9jlugk1dt06ob8enkd9g70uvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

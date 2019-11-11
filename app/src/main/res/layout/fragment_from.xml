@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FromFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/name_editText"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <Spinner
+        android:id="@+id/location_spinner"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_editText" />
+
+    <Button
+        android:id="@+id/image_button"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="100dp"
+        android:text="IMAGE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_spinner" />
+
+    <Button
+        android:id="@+id/date_button"
+        android:layout_width="291dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="140dp"
+        android:text="BIRTH DATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_button" />
+
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="291dp"
+        android:layout_height="30dp"
+        android:text="Birth Date"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="185dp"/>
+
+
+    <TextView
+        android:id="@+id/gender_textView"
+        android:layout_width="291dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="220dp"
+        android:text="Gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_button" />
+
+    <CheckBox
+        android:id="@+id/yap_checkBox"
+        android:layout_width="97dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="320dp"
+        android:text="Answer0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hobbies_textView" />
+
+    <CheckBox
+        android:id="@+id/nope_checkBox"
+        android:layout_width="97dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="320dp"
+        android:text="Answer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hobbies_textView" />
+
+    <TextView
+        android:id="@+id/hobbies_textView"
+        android:layout_width="291dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="300dp"
+        android:text="HOBBIES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gendergroup" />
+
+    <Spinner
+        android:id="@+id/department_spinner"
+        android:layout_width="291dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yap_checkBox" />
+
+
+    <RadioGroup
+        android:id="@+id/gendergroup"
+        android:layout_width="291dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/gender"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="245dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_toRightOf="@id/male"
+            android:text="Female" />
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/departmentgroup"
+        android:layout_width="291dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/department_radio"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="390dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/I_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I."
+            android:layout_below="@+id/department_radio" />
+
+        <RadioButton
+            android:id="@+id/II_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="II."
+            android:layout_below="@+id/department_radio"
+            android:layout_toRightOf="@id/I_radioButton"/>
+
+        <RadioButton
+            android:id="@+id/III_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="III."
+            android:layout_below="@+id/department_radio"
+            android:layout_toRightOf="@id/II_radioButton" />
+
+        <RadioButton
+            android:id="@+id/IV_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IV."
+            android:layout_below="@+id/department_radio"
+            android:layout_toRightOf="@id/III_radioButton" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ex_editText"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="430dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Expectations"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/I_radioButton" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="490dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ex_editText" />
+
+    <Button
+        android:id="@+id/list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="490dp"
+        android:text="LIST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ex_editText" />
+
+</FrameLayout>
